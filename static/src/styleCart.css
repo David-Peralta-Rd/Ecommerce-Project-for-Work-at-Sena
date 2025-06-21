@@ -1,0 +1,313 @@
+/* Estilos para la página del carrito */
+
+/* Contenedor principal del carrito */
+.cart-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    background-color: #f8fafc;
+    min-height: 100vh;
+}
+
+/* Título del carrito */
+h2.text-2xl {
+    color: #1f2937;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+h2.text-2xl::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #6366f1, #8b5cf6);
+    border-radius: 2px;
+}
+
+/* Lista de productos en el carrito */
+ul.space-y-4 {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+/* Items individuales del carrito */
+li.flex {
+    background: white;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 25px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+li.flex:last-child {
+    border-bottom: none;
+}
+
+li.flex:hover {
+    background-color: #f8fafc;
+    transform: translateX(5px);
+}
+
+/* Imagen del producto en el carrito */
+li img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-right: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+li:hover img {
+    transform: scale(1.05);
+}
+
+/* Contenido del producto */
+li .flex-grow {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100px;
+}
+
+/* Nombre del producto */
+li h3.font-semibold {
+    color: #1f2937;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+}
+
+li h3.font-semibold:hover {
+    color: #6366f1;
+}
+
+/* Descripción del producto */
+li p.text-gray-700 {
+    color: #6b7280;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 10px;
+
+    /* Limitar descripción a 2 líneas */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 2.8em;
+}
+
+/* Precio del producto */
+li p.text-indigo-600 {
+    color: #6366f1 !important;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+/* Cantidad */
+li p.text-gray-600 {
+    color: #4b5563;
+    font-size: 0.9rem;
+    font-weight: 500;
+    background-color: #f3f4f6;
+    padding: 4px 12px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+/* Botón de eliminar */
+.flex-shrink {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.flex-shrink form {
+    margin: 0;
+}
+
+.flex-shrink button {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    color: white;
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(239, 68, 68, 0.3);
+}
+
+.flex-shrink button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(239, 68, 68, 0.4);
+    background: linear-gradient(135deg, #dc2626, #b91c1c);
+}
+
+.flex-shrink button:active {
+    transform: scale(0.95);
+}
+
+/* Total del carrito */
+p strong {
+    font-size: 1.5rem;
+    color: #1f2937;
+    background: white;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    display: block;
+    text-align: center;
+    margin: 30px 0;
+    border: 2px solid #6366f1;
+}
+
+/* Botón de continuar compra */
+form:last-child {
+    text-align: center;
+    margin-top: 30px;
+}
+
+button[type="submit"] {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: white;
+    border: none;
+    padding: 16px 40px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+button[type="submit"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(99, 102, 241, 0.4);
+    background: linear-gradient(135deg, #5855f7, #7c3aed);
+}
+
+button[type="submit"]:active {
+    transform: translateY(-1px);
+}
+
+/* Carrito vacío */
+p:contains("Tu carro esta vacio") {
+    text-align: center;
+    color: #6b7280;
+    font-size: 1.2rem;
+    background: white;
+    padding: 60px 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    margin: 40px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cart-container {
+        padding: 20px 15px;
+    }
+
+    li.flex {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    li img {
+        margin: 0 auto 15px auto;
+        width: 80px;
+        height: 80px;
+    }
+
+    .flex-shrink {
+        position: static;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    li .flex-grow {
+        min-height: auto;
+    }
+
+    h2.text-2xl {
+        font-size: 1.5rem;
+    }
+
+    button[type="submit"] {
+        padding: 14px 30px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    li.flex {
+        padding: 15px;
+    }
+
+    li img {
+        width: 70px;
+        height: 70px;
+    }
+
+    li h3.font-semibold {
+        font-size: 1.1rem;
+    }
+
+    p strong {
+        font-size: 1.3rem;
+        padding: 15px 20px;
+    }
+
+    button[type="submit"] {
+        padding: 12px 25px;
+        width: 100%;
+    }
+}
+
+/* Animaciones de entrada */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+ul.space-y-4, p strong, form:last-child {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+li.flex {
+    animation: fadeInUp 0.6s ease-out;
+    animation-delay: calc(var(--item-index, 0) * 0.1s);
+}

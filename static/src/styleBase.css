@@ -1,0 +1,251 @@
+/* Estilos base para el ecommerce */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8fafc;
+}
+
+/* Container principal */
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    gap: 30px;
+    min-height: 10vh;
+}
+
+/* Sidebar de categorías */
+aside {
+    flex: 0 0 280px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    height: fit-content;
+    position: sticky;
+    top: 20px;
+}
+
+aside h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside li {
+    margin-bottom: 8px;
+}
+
+aside a {
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: #4b5563;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+aside a:hover {
+    background-color: #6366f1;
+    color: white;
+    transform: translateX(5px);
+    box-shadow: 0 2px 8px rgba(99, 102, 241, 0.3);
+}
+
+/* Área principal de productos */
+main {
+    flex: 1;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+main h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #6366f1;
+    position: relative;
+}
+
+main h2::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #6366f1, #8b5cf6);
+    border-radius: 2px;
+}
+
+/* Grid de productos */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* Tarjetas de productos */
+.grid > a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.grid > a > div {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid #e5e7eb;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.grid > a > div:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+    border-color: #6366f1;
+}
+
+/* Imágenes de productos */
+.grid img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.grid > a:hover img {
+    transform: scale(1.05);
+}
+
+/* Contenido de la tarjeta */
+.grid > a > div > h3,
+.grid > a > div > p {
+    padding: 0 20px;
+}
+
+.grid > a > div > h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 15px 20px 10px;
+    line-height: 1.4;
+}
+
+.grid > a > div > p {
+    color: #6b7280;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    flex-grow: 1;
+
+    /* Limitar descripción a 3 líneas */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 4.5em; /* 3 líneas × 1.5 line-height */
+}
+
+/* Precio */
+.grid > a > div > p.text-indigo-600 {
+    color: #6366f1 !important;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 15px 20px 20px;
+    padding: 10px 0;
+    border-top: 1px solid #e5e7eb;
+}
+
+/* Mensaje de imagen no disponible */
+.grid > a > div > p:first-child {
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f4f6;
+    color: #9ca3af;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 100%) {
+    .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    aside {
+        flex: none;
+        position: static;
+    }
+
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    aside, main {
+        padding: 20px;
+    }
+
+    main h2 {
+        font-size: 1.5rem;
+    }
+
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+    }
+
+    .grid img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    aside h2 {
+        font-size: 1.1rem;
+    }
+
+    main h2 {
+        font-size: 1.3rem;
+    }
+}
