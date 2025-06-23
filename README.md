@@ -49,6 +49,32 @@ http://localhost:8000/
 # Acceder como admin
 http://localhost:8000/admin/
 
+# Pruebas de mi trabajo para el proyecto:
+1. Inicio:
+   
+![image](https://github.com/user-attachments/assets/88c6c194-5f6a-4854-9bc9-917fb624a98f)
+
+2. En las categorias:
+
+![image](https://github.com/user-attachments/assets/e82f3985-2333-4358-8cf8-795ec8ff49d4)
+
+3. Menu de compra:
+
+![image](https://github.com/user-attachments/assets/1940954d-271d-4d5e-83f5-644e2369273e)
+
+4. Aceptar compra:
+
+![image](https://github.com/user-attachments/assets/bcf6350f-c3d4-447d-a1c2-f060a36ca091)
+
+5. Compraa Confirmada:
+
+![image](https://github.com/user-attachments/assets/5054457a-edab-4d12-aab2-79e6f403850c)
+
+6. Menu de admin:
+
+![image](https://github.com/user-attachments/assets/881742d4-c1ad-4fc6-9bd4-bf3024ae5fd8)
+
+
 # Fin
 Ese seria mi proyecto para un proyecto del sena, aclaro que este es un proyecto que no aseguro su uso de manera seria,
 es algo sencillo y directo al punto.
