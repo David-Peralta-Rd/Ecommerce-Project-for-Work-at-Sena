@@ -74,6 +74,8 @@ http://localhost:8000/admin/
 
 ![image](https://github.com/user-attachments/assets/881742d4-c1ad-4fc6-9bd4-bf3024ae5fd8)
 
+# Usar Extension Draw.io intregation para visualizar el diagrama general, imagen:
+
 
 # Fin
 Ese seria mi proyecto para un proyecto del sena, aclaro que este es un proyecto que no aseguro su uso de manera seria,
