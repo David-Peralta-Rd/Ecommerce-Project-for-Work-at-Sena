@@ -11,7 +11,7 @@ git clone https://github.com/David-Peralta-Rd/Proyecto-Ecommerce-Para-Trabajo-Se
 cd Proyecto-Ecommerce-Para-Trabajo-Sena
 ```
 2. Crear y activar entorno virtual.
-```bash   
+```bash
 # Crear entorno (Windows/Linux/Mac)
 python -m venv venv
 
@@ -51,7 +51,7 @@ http://localhost:8000/admin/
 
 # Pruebas de mi trabajo para el proyecto:
 1. Inicio:
-   
+
 ![image](https://github.com/user-attachments/assets/88c6c194-5f6a-4854-9bc9-917fb624a98f)
 
 2. En las categorias:
@@ -82,7 +82,3 @@ es algo sencillo y directo al punto.
 LICENCE: Mit
 
 @Creado por David Peralta✌️.
-
-
-
-
