@@ -75,6 +75,7 @@ http://localhost:8000/admin/
 ![image](https://github.com/user-attachments/assets/881742d4-c1ad-4fc6-9bd4-bf3024ae5fd8)
 
 # Usar Extension Draw.io intregation para visualizar el diagrama general, imagen:
+![image](https://github.com/user-attachments/assets/b373f600-a04a-466c-8d14-afd2fa0af138)
 
 
 # Fin
