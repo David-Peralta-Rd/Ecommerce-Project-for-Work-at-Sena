@@ -4,8 +4,8 @@ from products import tests as testProduct
 
 # Invocar test activarlos
 
-testCart()
-testOrders()
-testProduct()
+testCart.TestCartModels()
+testOrders.TestOrderModels()
+testProduct.TestProductModels()
 
 print("Tets echo")
