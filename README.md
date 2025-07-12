@@ -1,87 +1,86 @@
-# Proyecto Ecommerce.
-Desarrollado con:
+# Ecommerce Project.
+Developed with:
 1. Python 3.13.3
 2. Django
-3. Html y Css
+3. HTML and CSS
 
-# Pasos para instalar.
-1. Clonar repositorio y dirigirte al proyecto.
+# Installation steps.
+1. Clone the repository and navigate to the project.
 ```bash
 git clone https://github.com/David-Peralta-Rd/Proyecto-Ecommerce-Para-Trabajo-Sena.git
 cd Proyecto-Ecommerce-Para-Trabajo-Sena
 ```
-2. Crear y activar entorno virtual.
+2. Create and activate the virtual environment.
 ```bash
-# Crear entorno (Windows/Linux/Mac)
+# Create environment (Windows/Linux/Mac)
 python -m venv venv
 
-# Activar (Windows)
+# Activate (Windows)
 .\venv\Scripts\activate
 
-# Activar (Linux/Mac)
+# Activate (Linux/Mac)
 source venv/bin/activate
 ```
-3. Instalar dependencias y Activar cambios del proyecto.
+3. Install dependencies and activate project changes.
 ```bash
-# Instalar dependencias.
-pip install -r requeriments.txt
+# Install dependencies.
+pip install -r requirements.txt
 
-# Activar cambios en base de datos.
+# Activate changes to the database.
 python manage.py makemigrations
 
-# Migrar modelos a la base de datos.
+# Migrate models to the database.
 python manage.py migrate
 ```
-4. Por ultimo activaremos nuestro proyecto y crearemos un usuario admin-
+4. Finally, we'll activate our project and create an admin user:
 ```bash
-# Activar el proyecto en el puerto 8000 o cualquiera
+# Activate the project on port 8000 or any other port
 python manage.py runserver
 
-# Si lo quieres activar en otro puerto pon:
-python manage.py runserver 3000 # Puede ser cualquier puerto, en mi caso puse 3000.
+# If you want to activate it on another port, type:
+python manage.py runserver 3000 # It can be any port; in my case, I used 3000.
 
-# Crear usuario Admin, rellenas los datos y ya tienes un super usuario.
+# Create the admin user. Fill in the details, and you'll have a super user.
 python manage.py createsuperuser
 ```
-# Acceder a la web montada localmente:
+# Access the locally mounted website:
 http://localhost:8000/
 
-# Acceder como admin
+# Log in as admin
 http://localhost:8000/admin/
 
-# Pruebas de mi trabajo para el proyecto:
-1. Inicio:
+# Testing my work for the project:
+1. Home:
 
 ![image](https://github.com/user-attachments/assets/88c6c194-5f6a-4854-9bc9-917fb624a98f)
 
-2. En las categorias:
+2. In the categories:
 
 ![image](https://github.com/user-attachments/assets/e82f3985-2333-4358-8cf8-795ec8ff49d4)
 
-3. Menu de compra:
+3. Menu buys:
 
 ![image](https://github.com/user-attachments/assets/1940954d-271d-4d5e-83f5-644e2369273e)
 
-4. Aceptar compra:
+4. Accept purchase:
 
 ![image](https://github.com/user-attachments/assets/bcf6350f-c3d4-447d-a1c2-f060a36ca091)
 
-5. Compraa Confirmada:
+5. Confirmed Purchase:
 
 ![image](https://github.com/user-attachments/assets/5054457a-edab-4d12-aab2-79e6f403850c)
 
-6. Menu de admin:
+6. Menu admin:
 
 ![image](https://github.com/user-attachments/assets/881742d4-c1ad-4fc6-9bd4-bf3024ae5fd8)
 
-# Usar Extension Draw.io intregation para visualizar el diagrama general, imagen:
+# Use the Draw.io integration extension to view the general diagram, image:
 ![image](https://github.com/user-attachments/assets/b373f600-a04a-466c-8d14-afd2fa0af138)
 
+# End
+This would be my project for a SENA project. I clarify that this is a project that I do not guarantee its serious use.
+It's simple and to the point.
 
-# Fin
-Ese seria mi proyecto para un proyecto del sena, aclaro que este es un proyecto que no aseguro su uso de manera seria,
-es algo sencillo y directo al punto.
+LICENSE: Mit
 
-LICENCE: Mit
-
-@Creado por David Peralta✌️.
+@Created by David Peralta✌️.
